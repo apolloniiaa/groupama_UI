@@ -143,6 +143,12 @@ header {
     padding: 0.7rem 0;
   }
 }
+.show-more {
+  display: none;
+}
+.toggle-icon.opened .show-more {
+  display: table-row;
+}
 
 @media (max-width: 767.98px) {
   header {
