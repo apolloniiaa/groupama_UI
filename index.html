@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Groupama Biztosító</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="./assets/images/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,500&family=Cormorant+SC:wght@500;600&family=Merriweather:ital,wght@0,300;1,400&display=swap"
+        rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <header class="bg-white d-flex justify-content-between align-items-center">
+        <div class="logo">
+            <img class="groupama-logo" src="./assets/images/logo.svg" alt="groupama logo">
+        </div>
+        <div class="d-none d-md-flex align-items-center logout">
+            <img src="./assets/images/logout.svg" alt="logout">
+            <p class="ml-2 mb-0">Kilépés</p>
+        </div>
+        <div class="d-md-none d-flex align-items-center">
+            <img class="mobile-menu groupama-logo" src="./assets/images/mobile-menu.svg" alt="mobile icon">
+            <img src="./assets/images/logout.svg" alt="logout" class="ml-2">
+        </div>
+    </header>
+
+    <div class="main-container container-fluid">
+        <div class="row no-gutters">
+            <div class="col-md-3 custom-sidebar d-none d-md-block bg-white ">
+                <div class="user-info">
+                    <h2 class="user-info-title">Folyamatos Díjfizetésű Ultra Prémium Életbiztosítás</h2>
+                    <div class="content">
+                        <p class="user-info-label">Szerződő neve</p>
+                        <p class="user-info-value">Kovács István</p>
+                    </div>
+                </div>
+                <div class="user-info">
+                    <div class="content">
+                        <p class="user-info-label">Szerződés szám</p>
+                        <p class="user-info-value">87562443</p>
+                    </div>
+                </div>
+                <div class="user-info">
+                    <div class="content">
+                        <p class="user-info-label">Utolsó befizetés</p>
+                        <p class="user-info-value">2019. 06. 25.</p>
+                    </div>
+                </div>
+                <div class="user-info">
+                    <div class="content">
+                        <p class="user-info-label">Biztosítási díj rendezve</p>
+                        <p class="user-info-value">2019. 07. 01.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 custom-content">
+                <div class="row right-container">
+                    <div class="data-column">
+                        <div class="data-content">
+                            <p class="data-label main-text">Fizetendő tételek</p>
+                            <!-- Fizetendő tételek tartalma ide -->
+                        </div>
+                    </div>
+                    <!-- Egyéb data-column blokkok itt -->
+                </div>
+
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col texti">Azonosító</th>
+                            <th scope="col texti">Befizetés módja</th>
+                            <th scope="col texti">Dátum</th>
+                            <th scope="col texti">Összeg</th>
+                            <th scope="col texti">Státusz</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="cell-content">
+                                    <img src="./assets/images/arrow.svg" alt="icon"> EPAYMT8...
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cell-content">Bankkártya</div>
+                            </td>
+                            <td>
+                                <div class="cell-content">2019. 06. 25.</div>
+                            </td>
+                            <td>
+                                <div class="cell-content">5 000 Ft.</div>
+                            </td>
+                            <td>
+                                <div class="cell-content">Folyamatban</div>
+                            </td>
+                            <td>
+                                <div class="cell-content">
+                                    <img src="./assets/images/csatolmany.svg" alt="icon">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cell-content">
+                                    <img src="./assets/images/arrow2.svg" alt="icon">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

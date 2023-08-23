@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  background-color: #fafafc;
+}
+
+header {
+  padding: 2rem 6rem;
+  box-shadow: 4px 5px 14px rgba(0, 0, 0, 0.1);
+}
+header .logout {
+  font-size: 0.5rem;
+  cursor: pointer;
+}
+header .logout img {
+  margin-right: 0.5rem;
+}
+header .logout p {
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+.main-container .row .custom-sidebar {
+  padding: 2rem;
+  margin-left: 6rem;
+  height: 770px;
+  z-index: -99999;
+}
+.main-container .row .custom-sidebar .user-info h2 {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+.main-container .row .custom-sidebar .user-info .content {
+  padding-bottom: 1rem;
+}
+.main-container .row .custom-sidebar .user-info .content p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+.main-container .row .custom-content {
+  padding: 1rem;
+}
+.main-container .row .custom-content p {
+  font-size: 14px;
+  font-family: sans-serif;
+  line-height: 16px;
+  color: #6f7381;
+}
+.main-container .row .data-column {
+  padding: 1rem;
+  text-align: left;
+}
+.main-container .row .data-column .main-text {
+  font-weight: 400;
+}
+.main-container .row .data-column .texti {
+  color: #6f7381;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+.main-container .title-data,
+.main-container .data-table {
+  margin-left: 1rem;
+}
+.main-container .custom-row {
+  max-width: 825px;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.main-container .collapsible-arrow {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.main-container .collapsible-arrow.collapsed {
+  transform: rotate(-90deg);
+}
+.main-container .data-row {
+  transition: max-height 0.3s;
+  overflow: hidden;
+  max-height: 40px;
+}
+
+.table {
+  width: 800px;
+}
+.table th,
+.table td {
+  border: none;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+}
+.table .texti {
+  color: #6f7381;
+}
+.table tbody tr {
+  background-color: white;
+}
+.table.table-bordered {
+  border: none !important;
+}
+.table.table-bordered thead th {
+  border-bottom: none;
+}
+.table .cell-content {
+  padding: 0.7rem 0;
+}
+
+@media (max-width: 767.98px) {
+  header {
+    padding: 0.5rem;
+  }
+  header .groupama-logo,
+  header .logout img {
+    height: 24px;
+  }
+  .main-container .row {
+    margin: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
