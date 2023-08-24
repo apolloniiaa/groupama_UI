@@ -1,0 +1,11 @@
+{
+  "name": "groupama-biztosito",
+  "version": "1.0.0",
+  "description": "Project Description",
+  "scripts": {
+    "build-css": "sass styles/style.scss styles/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.35.2"
+  }
+}
