@@ -1,0 +1,28 @@
+header {
+  padding: 2rem 6rem;
+  box-shadow: 4px 5px 14px rgba(0, 0, 0, 0.1);
+
+  .logout {
+    font-size: 0.5rem;
+    cursor: pointer;
+
+    img {
+      margin-right: 0.5rem;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    padding: 0.5rem;
+
+    .groupama-logo,
+    .logout img {
+      height: 24px;
+    }
+  }
+}

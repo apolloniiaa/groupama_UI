@@ -1,0 +1,28 @@
+#wrapper .custom-sidebar {
+  box-shadow: 4px 5px 14px rgba(0, 0, 0, 0.1607843137);
+  margin-left: 6rem;
+  z-index: -99999;
+}
+#wrapper .custom-sidebar .user-info h2 {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  width: 300px;
+  padding-left: 2rem;
+}
+#wrapper .custom-sidebar .user-info .content {
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 1rem;
+}
+#wrapper .custom-sidebar .user-info p {
+  margin-bottom: 0;
+  font-size: 14px;
+  padding-left: 2rem;
+}
+
+@media (max-width: 767px) {
+  .custom-sidebar {
+    margin-left: 1rem;
+  }
+}/*# sourceMappingURL=sidebar.css.map */
