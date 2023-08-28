@@ -4,23 +4,24 @@
 @import 'layout/navigation';
 @import 'layout/sidebar';
 
-body {
-  font-family: 'Merriweather', serif;
-  background-color: #ecf0ff26;
-  color: #3d424c;
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
 }
 
+body {
+  font-family: 'Merriweather', serif;
+  background-color: $primary-color;
+}
 #wrapper {
   #page-content-wrapper {
     .custom-content {
       padding: 1rem;
 
       .right-container {
-        display: flex;
-        flex-direction: column;
+        @include flex-col;
         .row {
-          display: flex;
-          flex-direction: column;
+          @include flex-col;
         }
       }
     }

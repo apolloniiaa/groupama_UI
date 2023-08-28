@@ -1,3 +1,24 @@
+$primary-color: #ecf0ff26;
+$secondary-color: #6f7381;
+
+@mixin box-shadow {
+  box-shadow: 1px 3px 8px 1px rgb(0 0 0 / 7%);
+}
+@mixin font-light {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+@mixin font-bold {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+}
+
 #wrapper {
   #page-content-wrapper {
     .custom-content {
@@ -10,7 +31,7 @@
               .table {
                 min-width: 800px;
                 tr th.table-head-text {
-                  color: #6f7381;
+                  color: $secondary-color;
                   border: none;
                 }
                 td {
@@ -19,14 +40,12 @@
                   }
                   background-color: white;
                   .cell-content {
-                    font-family: 'Open Sans', sans-serif;
-                    font-weight: 400;
-                    font-size: 14px;
+                    @include font-light;
                   }
                 }
 
                 tbody {
-                  box-shadow: 1px 3px 8px 1px rgb(0 0 0 / 7%);
+                  @include box-shadow;
                   line-height: 3;
 
                   .show-more {
@@ -34,9 +53,7 @@
                   }
                   th {
                     background-color: white;
-                    font-family: 'Open Sans', sans-serif;
-                    font-weight: 400;
-                    font-size: 14px;
+                    @include font-light;
                   }
                   tr {
                     .order-0 {
@@ -91,11 +108,10 @@
                 }
               }
               .table thead {
-                background-color: rgba(236, 240, 255, 0.1490196078);
+                background-color: $primary-color;
                 .table-head-text {
-                  font-family: 'Open Sans', sans-serif;
-                  font-size: 14px;
-                  font-weight: 400;
+                  @include font-light;
+                  color: $secondary-color;
                 }
               }
               .table td,
@@ -103,7 +119,7 @@
                 padding: 0.75rem;
                 vertical-align: top;
                 border-top: none;
-                font-weight: 400;
+                @include font-light;
               }
 
               .hidden-cell {
@@ -126,29 +142,26 @@
     #page-content-wrapper {
       .custom-content {
         .right-container {
+          margin-left: 2rem !important;
           .data-column {
             padding: 2.5rem 0 2.5rem 3rem;
           }
           .row {
-            margin-left: 3rem !important;
             .main-wrapper {
               .content {
                 .table {
-                  display: flex;
-                  flex-direction: column;
+                  @include font-light;
                   min-width: -webkit-fill-available;
-                  width: 600px;
+                  width: auto;
                   thead {
                     display: none;
                   }
                   tbody {
-                    display: flex;
-                    flex-direction: column;
+                    @include flex;
                   }
 
                   tr {
-                    display: flex;
-                    flex-direction: column;
+                    @include flex;
                     .order-0 {
                       display: block;
                       .cell-content {
@@ -202,7 +215,6 @@
                     display: table-cell;
                     .iconss {
                       display: inline;
-                      margin-left: 5px;
                     }
                   }
 

@@ -9,7 +9,7 @@
   font-size: 14px;
   font-family: sans-serif;
   line-height: 16px;
-  color: #6f7381;
+  color: rgba(236, 240, 255, 0.1490196078);
 }
 .right-container .data-column nav.menu-list {
   display: flex;
@@ -78,7 +78,6 @@
 
 @media (max-width: 1300px) {
   .right-container .data-column nav.menu-list ul::before {
-    width: 530px;
     min-width: -webkit-fill-available;
   }
 }

@@ -119,15 +119,18 @@ ol {
 }
 #wrapper #page-content-wrapper .custom-content .right-container .row .main-wrapper .content .table thead .table-head-text {
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
+  color: #6f7381;
 }
 #wrapper #page-content-wrapper .custom-content .right-container .row .main-wrapper .content .table td,
 #wrapper #page-content-wrapper .custom-content .right-container .row .main-wrapper .content .table th {
   padding: 0.75rem;
   vertical-align: top;
   border-top: none;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  font-size: 14px;
 }
 #wrapper #page-content-wrapper .custom-content .right-container .row .main-wrapper .content .hidden-cell {
   visibility: hidden;
@@ -140,17 +143,18 @@ ol {
   #wrapper {
     padding: 0 2rem 0 2rem;
   }
+  #wrapper #page-content-wrapper .custom-content .right-container {
+    margin-left: 2rem !important;
+  }
   #wrapper #page-content-wrapper .custom-content .right-container .data-column {
     padding: 2.5rem 0 2.5rem 3rem;
   }
-  #wrapper #page-content-wrapper .custom-content .right-container .row {
-    margin-left: 3rem !important;
-  }
   #wrapper #page-content-wrapper .custom-content .right-container .row .main-wrapper .content .table {
-    display: flex;
-    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
     min-width: -webkit-fill-available;
-    width: 600px;
+    width: auto;
   }
   #wrapper #page-content-wrapper .custom-content .right-container .row .main-wrapper .content .table thead {
     display: none;
@@ -213,7 +217,6 @@ ol {
   }
   #wrapper #page-content-wrapper .custom-content .right-container .row .main-wrapper .content .table .mobile-only .iconss {
     display: inline;
-    margin-left: 5px;
   }
   #wrapper #page-content-wrapper .custom-content .right-container .row .main-wrapper .content .table .arrow-mobile {
     height: 10px;
@@ -293,7 +296,7 @@ header .logout p {
   font-size: 14px;
   font-family: sans-serif;
   line-height: 16px;
-  color: #6f7381;
+  color: rgba(236, 240, 255, 0.1490196078);
 }
 .right-container .data-column nav.menu-list {
   display: flex;
@@ -362,7 +365,6 @@ header .logout p {
 
 @media (max-width: 1300px) {
   .right-container .data-column nav.menu-list ul::before {
-    width: 530px;
     min-width: -webkit-fill-available;
   }
 }
@@ -406,7 +408,6 @@ header .logout p {
 body {
   font-family: "Merriweather", serif;
   background-color: rgba(236, 240, 255, 0.1490196078);
-  color: #3d424c;
 }
 
 #wrapper #page-content-wrapper .custom-content {

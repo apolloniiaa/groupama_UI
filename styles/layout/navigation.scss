@@ -1,3 +1,4 @@
+$secondary-color: #ecf0ff26;
 .right-container {
   .data-column {
     padding: 1rem;
@@ -10,7 +11,7 @@
         font-size: 14px;
         font-family: sans-serif;
         line-height: 16px;
-        color: #6f7381;
+        color: $secondary-color;
       }
     }
     nav.menu-list {
@@ -94,7 +95,6 @@
       nav.menu-list {
         ul {
           &::before {
-            width: 530px;
             min-width: -webkit-fill-available;
           }
         }

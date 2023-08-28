@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const windowWidth =
       window.innerWidth || document.documentElement.clientWidth;
 
-    if (windowWidth <= 1024) {
+    if (windowWidth <= 1300) {
       elementsToHide.forEach((element) => {
         element.style.display = 'none';
       });
