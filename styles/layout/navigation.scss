@@ -1,5 +1,4 @@
 .right-container {
-  display: contents;
   .data-column {
     padding: 1rem;
     text-align: left;
@@ -89,16 +88,14 @@
   }
 }
 
-.right-container .data-column {
-  display: contents;
-}
 @media (max-width: 1300px) {
   .right-container {
     .data-column {
       nav.menu-list {
         ul {
           &::before {
-            min-width: 710px;
+            width: 530px;
+            min-width: -webkit-fill-available;
           }
         }
       }
@@ -108,12 +105,11 @@
 @media (max-width: 780px) {
   .right-container {
     .data-column {
-      padding: 0 0 1rem 0;
       nav.menu-list {
         ul {
-          width: 330px;
+          width: 275px;
           &::before {
-            min-width: 330px;
+            width: 275px;
           }
         }
       }

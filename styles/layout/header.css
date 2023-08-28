@@ -1,6 +1,7 @@
 header {
   padding: 2rem 6rem;
   box-shadow: 4px 5px 14px rgba(0, 0, 0, 0.1);
+  display: flex;
 }
 header .logout {
   font-size: 0.5rem;

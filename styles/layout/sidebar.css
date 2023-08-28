@@ -2,6 +2,7 @@
   box-shadow: 4px 5px 14px rgba(0, 0, 0, 0.1607843137);
   margin-left: 6rem;
   z-index: -99999;
+  min-height: 100vh;
 }
 #wrapper .custom-sidebar .user-info h2 {
   font-size: 15px;

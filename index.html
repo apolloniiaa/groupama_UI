@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="bg-white d-flex justify-content-between align-items-center">
+    <header class="bg-white justify-content-between align-items-center">
         <div class="logo">
             <img class="groupama-logo" src="./assets/images/logo.svg" alt="groupama logo">
         </div>
@@ -33,11 +33,7 @@
         </div>
     </header>
 
-
-
-
-
-    <div class="d-flex" id="wrapper">
+    <div class="d-md-flex" id="wrapper">
         <!-- Sidebar -->
         <div class="custom-sidebar d-none d-md-block bg-white">
             <div class="user-info">
@@ -91,9 +87,8 @@
                     <div class="row my-5">
                         <div class="col ml-3 main-wrapper">
                             <!-- Táblázat 1 -->
-                            <div class="content" id="fizetendo-section">
-
-                                <table class="table  rounded  content table-hover">
+                            <div class=" content" id="fizetendo-section">
+                                <table class="table  rounded  content">
                                     <thead class="showing-line">
                                         <tr>
                                             <th scope="col" class="table-head-text">Azonosító</th>
@@ -107,23 +102,23 @@
                                     </thead>
                                     <tbody>
                                         <tr class="status-folyamatban">
-                                            <td class="order-5">
+                                            <td class="order-5 d-none d-md-block">
                                                 <div class="cell-content">
                                                     <img src="./assets/images/arrow.svg" alt="icon">
-                                                    <span class="azonosito"
-                                                        data-original-text="hEPAYMT8566777">hEPAYMT8566777</span>
+                                                    <span class="identifier" style="cursor: pointer;"
+                                                        data-original-text="EPAYMT8H223">EPAYMT8H223</span>
                                                 </div>
                                             </td>
 
-                                            <td class="order-3">
-                                                <div class="cell-content">Bankkártya</div>
+                                            <td class="order-3 show-more-mobile">
+                                                <div class="cell-content d-none d-md-block">Bankkártya</div>
                                             </td>
 
                                             <td class="desktop-only">
                                                 <div class="cell-content">2019. 06. 25.</div>
                                             </td>
 
-                                            <td class="mobile-only order-2">
+                                            <td class="mobile-only order-2 ">
                                                 <div class="cell-content">
                                                     Fizetési dátum: 2019.06.25 Ft <img class="iconss"
                                                         src="./assets/images/csatolmany.svg" alt="icon">
@@ -131,10 +126,10 @@
                                             </td>
 
                                             <td class="desktop-only">
-                                                <div class="cell-content">5 000 Ft</div>
+                                                <div class="cell-content price">5 000 Ft</div>
                                             </td>
                                             <td class="order-1 mobile-only">
-                                                <div class="cell-content">5 000 Ft</div>
+                                                <div class="cell-content price">5 000 Ft</div>
                                             </td>
                                             <td class="order-0">
                                                 <div class="cell-content ">
@@ -164,16 +159,17 @@
                                             <td colspan="4">Könyvelt díj</td>
                                         </tr>
                                         <tr class="show-more" id="biztositas-row">
-                                            <th scope="row">2022.11.11</th>
+                                            <th scope="row class=" biztositasi-ido" style="font-size: 0.7rem;">2019. 06.
+                                                02 - 07. 01.</th>
                                             <td colspan="1" class="colspan-hide"></td>
                                             <td>5000 ft</td>
                                             <td colspan="4">122000</td>
                                         </tr>
-                                        <tr class="show-more" id="biztositas-row">
+                                        <tr class="show-more order-7" id="biztositas-row">
                                             <th scope="row">Csatolmány</th>
-                                            <td colspan="1" class="colspan-hide"></td>
-                                            <td colspan="1" class="colspan-hide"></td>
-                                            <td colspan="4" class="colspan-hide"></td>
+                                            <td colspan="1" class="colspan-hide show-more-mobile"></td>
+                                            <td colspan="1" class="colspan-hide show-more-mobile"></td>
+                                            <td colspan="4" class="colspan-hide show-more-mobile"></td>
                                         </tr>
                                         <tr class="show-more" id="biztositas-row">
                                             <td colspan="7" class="payment" data-title="Fizetési nyugta letöltése">
@@ -188,218 +184,16 @@
 
                                     </tbody>
                                 </table>
-
                                 <!-- Táblázat 2 -->
-
-                                <table class="table  rounded  content table-hover">
-                                    <thead class="showing-line">
-                                        <tr>
-                                            <th scope="col" class="table-head-text">Azonosító</th>
-                                            <th scope="col" class="table-head-text">Befizetés módja</th>
-                                            <th scope="col" class="table-head-text">Dátum</th>
-                                            <th scope="col" class="table-head-text">Összeg</th>
-                                            <th scope="col" class="table-head-text">Státusz</th>
-                                            <th scope="col" class="table-head-text"></th>
-                                            <th scope="col" class="table-head-text"></th>
-                                        </tr>
-                                    </thead>
-
+                                <table class="table  rounded  content common-table-height">
                                     <tbody>
                                         <tr class="toggle-icon status-berkezett">
-                                            <td class="order-5">
-
-                                                <div class="cell-content">
-                                                    1234567
-                                                </div>
-                                            </td>
-                                            <td class="order-3">
-                                                <div class="cell-content ">Bankkártya</div>
-                                            </td>
-
-                                            <td class="desktop-only">
-                                                <div class="cell-content">2019. 06. 25.</div>
-                                            </td>
-
-                                            <td class="mobile-only order-2">
-                                                <div class="cell-content">
-                                                    Fizetési dátum: 2019.06.25 Ft <img class="iconss"
-                                                        src="./assets/images/csatolmany.svg" alt="icon">
-                                                </div>
-                                            </td>
-
-                                            <td class="desktop-only">
-                                                <div class="cell-content">5 000 Ft</div>
-                                            </td>
-                                            <td class="order-1 mobile-only">
-                                                <div class="cell-content">5000 Ft</div>
-                                            </td>
-                                            <td class="order-0">
-                                                <div class="cell-content ">
-                                                    <div class="circle "></div>
-                                                    Beérkezett
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div></div>
-                                            </td>
-                                            <td class="desktop-only">
-                                                <div class="cell-content toggle-icon">
-                                                    <img class="iconss desktop-only-arrow"
-                                                        src="./assets/images/arrow2.svg" alt="icon" class="toggle-icon">
-                                                </div>
-                                            </td>
-
-                                        </tr>
-                                        <tr class="show-more">
-                                            <th scope="row" class="biztositas-row2">Biztosítási időszak</th>
-                                            <td colspan="1" class="colspan-hide"></td>
-                                            <td>Díjelőírás</td>
-                                            <td colspan="4">Könyvelt díj</td>
-                                        </tr>
-                                        <tr class="show-more" id="biztositas-row">
-                                            <th scope="row">2022.11.11</th>
-                                            <td colspan="1" class="colspan-hide"></td>
-                                            <td>5000 ft</td>
-                                            <td colspan="4">122000</td>
-                                        </tr>
-                                        <tr class="show-more" id="biztositas-row">
-                                            <th scope="row">Csatolmány</th>
-                                            <td colspan="1" class="colspan-hide"></td>
-                                            <td colspan="1" class="colspan-hide"></td>
-                                            <td colspan="4" class="colspan-hide"></td>
-                                        </tr>
-                                        <tr class="show-more" id="biztositas-row">
-                                            <td colspan="7" class="payment" data-title="Fizetési nyugta letöltése">
-                                                <a href="./assets/documents/fizetesi_nyugta.pdf"
-                                                    download="fizetesi_nyugta.pdf">
-                                                    <img src="./assets/images/pdf.svg" class="payment" alt="icon">
-                                                    Fizetési nyugta letöltése
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                    </tbody>
-                                </table>
-
-
-                                <!-- Táblázat 3 -->
-                                <table class="table  rounded  content table-hover">
-                                    <thead class="showing-line">
-                                        <tr>
-                                            <th scope="col" class="table-head-text">Azonosító</th>
-                                            <th scope="col" class="table-head-text">Befizetés módja</th>
-                                            <th scope="col" class="table-head-text">Dátum</th>
-                                            <th scope="col" class="table-head-text">Összeg</th>
-                                            <th scope="col" class="table-head-text">Státusz</th>
-                                            <th scope="col" class="table-head-text"></th>
-                                            <th scope="col" class="table-head-text"></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <td class="order-5">
-                                            <div class="cell-content">
-                                                <img src="./assets/images/arrow.svg" alt="icon">
-                                                <span class="azonosito">hEPAYMTsálálálá</span>
-                                            </div>
-                                        </td>
-                                        <td class="order-3">
-                                            <div class="cell-content">Bankkártya</div>
-                                        </td>
-
-                                        <td class="desktop-only">
-                                            <div class="cell-content">2019. 06. 25.</div>
-                                        </td>
-
-                                        <td class="mobile-only order-2">
-                                            <div class="cell-content">
-                                                Fizetési dátum: 2019.06.25 Ft <img class="iconss"
-                                                    src="./assets/images/csatolmany.svg" alt="icon">
-                                            </div>
-                                        </td>
-
-                                        <td class="desktop-only">
-                                            <div class="cell-content">5 000 Ft</div>
-                                        </td>
-                                        <td class="order-1 mobile-only">
-                                            <div class="cell-content">5 000 Ft</div>
-                                        </td>
-                                        <td class="order-0">
-                                            <div class="cell-content ">
-                                                <div class="circle"></div>
-                                                Sikertelen
-                                            </div>
-                                        </td>
-                                        <td class="desktop-only">
-                                            <div class="cell-content">
-                                                <img class="toggle-icon desktop-only"
-                                                    src="./assets/images/csatolmany.svg" alt="icon">
-                                            </div>
-                                        </td>
-                                        <td class="desktop-only">
-                                            <div class="cell-content toggle-icon">
-                                                <img class="iconss desktop-only-arrow" src="./assets/images/arrow2.svg"
-                                                    alt="icon" class="toggle-icon">
-                                            </div>
-                                        </td>
-
-                                        </tr>
-
-                                        <tr class="show-more">
-                                            <th scope="row" class="biztositas-row2">Biztosítási időszak</th>
-                                            <td colspan="1" class="colspan-hide"></td>
-                                            <td>Díjelőírás</td>
-                                            <td colspan="4">Könyvelt díj</td>
-                                        </tr>
-                                        <tr class="show-more" id="biztositas-row">
-                                            <th scope="row">2022.11.11</th>
-                                            <td colspan="1" class="colspan-hide"></td>
-                                            <td>5000 ft</td>
-                                            <td colspan="4">122000</td>
-                                        </tr>
-                                        <tr class="show-more" id="biztositas-row">
-                                            <th scope="row">Csatolmány</th>
-                                            <td colspan="1" class="colspan-hide"></td>
-                                            <td colspan="1" class="colspan-hide"></td>
-                                            <td colspan="4" class="colspan-hide"></td>
-                                        </tr>
-                                        <tr class="show-more" id="biztositas-row">
-                                            <td colspan="7" class="payment" data-title="Fizetési nyugta letöltése">
-                                                <a href="./assets/documents/fizetesi_nyugta.pdf"
-                                                    download="fizetesi_nyugta.pdf">
-                                                    <img src="./assets/images/pdf.svg" class="payment" alt="icon">
-                                                    Fizetési nyugta letöltése
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-
-                                    </tbody>
-                                </table>
-
-
-
-                                <!-- Táblázat 4 -->
-                                <table class="table  rounded  content table-hover">
-                                    <thead class="showing-line">
-                                        <tr>
-                                            <th scope="col" class="table-head-text">Azonosító</th>
-                                            <th scope="col" class="table-head-text">Befizetés módja</th>
-                                            <th scope="col" class="table-head-text">Dátum</th>
-                                            <th scope="col" class="table-head-text">Összeg</th>
-                                            <th scope="col" class="table-head-text">Státusz</th>
-                                            <th scope="col" class="table-head-text"></th>
-                                            <th scope="col" class="table-head-text"></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="toggle-icon status-berkezett">
-                                            <td class="order-5">
+                                            <td class="order-5 show-more-mobile">
                                                 <div class="cell-content">
                                                     <img src="./assets/images/arrow.svg" alt="icon"> EPAYMT
                                                 </div>
                                             </td>
-                                            <td class="order-3">
+                                            <td class="order-3 show-more-mobile">
                                                 <div class="cell-content">Bankkártya</div>
                                             </td>
 
@@ -415,18 +209,119 @@
                                             </td>
 
                                             <td class="desktop-only">
-                                                <div class="cell-content">5 000 Ft</div>
+                                                <div class="cell-content price">5 000 Ft</div>
                                             </td>
-                                            <td class="order-1 mobile-only ">
-                                                <div class="cell-content order-beerkezett">5 000 Ft <img
-                                                        class="arrow-mobile" src="./assets/images/arrow2.svg"
-                                                        alt="icon">
+                                            <td class="order-1 mobile-only">
+                                                <div class="cell-content order-beerkezett">
+                                                    <div class="flex-container">
+                                                        <div class="cell-content-text price">5 000 Ft</div>
+                                                        <img class="arrow-mobile" src="./assets/images/arrow2.svg"
+                                                            alt="icon">
+                                                    </div>
                                                 </div>
                                             </td>
                                             <td class="order-0">
                                                 <div class="cell-content ">
                                                     <div class="circle"></div>
                                                     Beérkezett
+                                                </div>
+                                            </td>
+                                            <td class="desktop-only">
+                                                <div class="cell-content">
+                                                    <img class="toggle-icon desktop-only"
+                                                        src="./assets/images/csatolmany.svg" alt="icon">
+                                                </div>
+                                            </td>
+                                            <td class="desktop-only">
+                                                <div class="cell-content toggle-icon">
+                                                    <img class="iconss desktop-only-arrow"
+                                                        src="./assets/images/arrow2.svg" alt="icon" class="toggle-icon">
+                                                </div>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr class="show-more  border-top border-bottom">
+                                            <th scope="row" class="biztositas-row2 desktop-only">Biztosítási időszak
+                                            </th>
+                                            <th scope="row" class="biztositas-row2 mobile-only order-8 ">Biztosítási
+                                                időszak
+                                                <br>2019. 06.
+                                                02 - 07. 01
+                                            </th>
+                                            <th scope="row" class="biztositas-row2 mobile-only  ">
+                                            <td colspan="1" class="colspan-hide"></td>
+                                            <td class="order-6">Díjelőírás</td>
+                                            <td colspan="4 order-6">Könyvelt díj</td>
+                                        </tr>
+                                        <tr class="show-more" id="biztositas-row">
+                                            <th scope="row" class="   show-more-mobile  desktop-only biztositasi-ido"
+                                                style="font-size: 0.7rem;">
+                                                2019. 06.
+                                                02 - 07. 01.</th>
+                                            <td colspan="1" class="colspan-hide"></td>
+                                            <td class="desktop-only">5000 ft</td>
+                                            <td colspan="4" class=" show-more-mobile ">122000</td>
+                                        </tr>
+                                        <tr class="show-more order-7" id="biztositas-row">
+                                            <th scope="row">Csatolmány</th>
+                                            <td colspan="1" class="colspan-hide show-more-mobile"></td>
+                                            <td colspan="1" class="colspan-hide show-more-mobile"></td>
+                                            <td colspan="4" class="colspan-hide show-more-mobile"></td>
+                                        </tr>
+                                        <tr class="show-more" id="biztositas-row">
+                                            <td colspan="7" class="payment" data-title="Fizetési nyugta letöltése">
+                                                <a href="./assets/documents/fizetesi_nyugta.pdf"
+                                                    download="fizetesi_nyugta.pdf">
+                                                    <img src="./assets/images/pdf.svg" class="payment" alt="icon">
+                                                    Fizetési nyugta letöltése
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                    </tbody>
+                                </table>
+                                <!-- Táblázat 3 -->
+                                <table class="table  rounded  content common-table-height">
+                                    <tbody>
+                                        <tr class=" status-sikertelen">
+                                            <td class="order-5 show-more-mobile">
+                                                <div class="cell-content">
+                                                    <img src="./assets/images/arrow.svg" alt="icon"> EPAYMT
+                                                </div>
+                                            </td>
+                                            <td class="order-3 show-more-mobile">
+                                                <div class="cell-content">Bankkártya</div>
+                                            </td>
+
+                                            <td class="desktop-only">
+                                                <div class="cell-content">2019. 06. 25.</div>
+                                            </td>
+
+                                            <td class="mobile-only order-2">
+                                                <div class="cell-content">
+                                                    Fizetési dátum: 2019.06.25 Ft <img class="iconss"
+                                                        src="./assets/images/csatolmany.svg" alt="icon">
+                                                </div>
+                                            </td>
+
+                                            <td class="desktop-only">
+                                                <div class="cell-content price price">5 000 Ft</div>
+                                            </td>
+                                            <td class="order-1 mobile-only">
+                                                <div class="cell-content order-beerkezett">
+                                                    <div class="flex-container">
+                                                        <div class="cell-content-text price">5 000 Ft</div>
+                                                        <img class="arrow-mobile" src="./assets/images/arrow2.svg"
+                                                            alt="icon">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="order-0">
+                                                <div class="cell-content ">
+                                                    <div class="circle"></div>
+                                                    Sikertelen
                                                 </div>
                                             </td>
                                             <td class="desktop-only">
@@ -451,7 +346,8 @@
                                             <td colspan="4">Könyvelt díj</td>
                                         </tr>
                                         <tr class="show-more" id="biztositas-row">
-                                            <th scope="row">2022.11.11</th>
+                                            <th scope="row class=" biztositasi-ido" style="font-size: 0.7rem;">2019. 06.
+                                                02 - 07. 01.</th>
                                             <td colspan="1" class="colspan-hide"></td>
                                             <td class="desktop-only">5000 ft</td>
                                             <td colspan="4">122000</td>
@@ -461,6 +357,104 @@
                                             <td colspan="1" class="colspan-hide"></td>
                                             <td colspan="1" class="colspan-hide"></td>
                                             <td colspan="4" class="colspan-hide"></td>
+                                        </tr>
+                                        <tr class="show-more" id="biztositas-row">
+                                            <td colspan="7" class="payment" data-title="Fizetési nyugta letöltése">
+                                                <a href="./assets/documents/fizetesi_nyugta.pdf"
+                                                    download="fizetesi_nyugta.pdf">
+                                                    <img src="./assets/images/pdf.svg" class="payment" alt="icon">
+                                                    Fizetési nyugta letöltése
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                    </tbody>
+                                </table>
+                                <!-- Táblázat 4 -->
+                                <table class="table  rounded  content common-table-height">
+                                    <tbody>
+                                        <tr class="toggle-icon status-berkezett">
+                                            <td class="order-5 show-more-mobile">
+                                                <div class="cell-content">
+                                                    <img src="./assets/images/arrow.svg" alt="icon"> EPAYMT
+                                                </div>
+                                            </td>
+                                            <td class="order-3 show-more-mobile">
+                                                <div class="cell-content">Bankkártya</div>
+                                            </td>
+
+                                            <td class="desktop-only">
+                                                <div class="cell-content">2019. 06. 25.</div>
+                                            </td>
+
+                                            <td class="mobile-only order-2">
+                                                <div class="cell-content">
+                                                    Fizetési dátum: 2019.06.25 Ft <img class="iconss"
+                                                        src="./assets/images/csatolmany.svg" alt="icon">
+                                                </div>
+                                            </td>
+
+                                            <td class="desktop-only">
+                                                <div class="cell-content price">5 000 Ft</div>
+                                            </td>
+                                            <td class="order-1 mobile-only">
+                                                <div class="cell-content order-beerkezett">
+                                                    <div class="flex-container">
+                                                        <div class="cell-content-text price">5 000 Ft</div>
+                                                        <img class="arrow-mobile" src="./assets/images/arrow2.svg"
+                                                            alt="icon">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="order-0">
+                                                <div class="cell-content ">
+                                                    <div class="circle"></div>
+                                                    Beérkezett
+                                                </div>
+                                            </td>
+                                            <td class="desktop-only">
+                                                <div class="cell-content">
+                                                    <img class="toggle-icon desktop-only"
+                                                        src="./assets/images/csatolmany.svg" alt="icon">
+                                                </div>
+                                            </td>
+                                            <td class="desktop-only">
+                                                <div class="cell-content toggle-icon">
+                                                    <img class="iconss desktop-only-arrow"
+                                                        src="./assets/images/arrow2.svg" alt="icon" class="toggle-icon">
+                                                </div>
+                                            </td>
+
+                                        </tr>
+
+                                        <tr class="show-more  border-top border-bottom">
+                                            <th scope="row" class="biztositas-row2 desktop-only">Biztosítási időszak
+                                            </th>
+                                            <th scope="row" class="biztositas-row2 mobile-only order-8 ">Biztosítási
+                                                időszak
+                                                <br>2019. 06.
+                                                02 - 07. 01
+                                            </th>
+                                            <th scope="row" class="biztositas-row2 mobile-only  ">
+                                            <td colspan="1" class="colspan-hide"></td>
+                                            <td class="order-6">Díjelőírás</td>
+                                            <td colspan="4 order-6">Könyvelt díj</td>
+                                        </tr>
+                                        <tr class="show-more" id="biztositas-row">
+                                            <th scope="row" class="   show-more-mobile  desktop-only biztositasi-ido"
+                                                style="font-size: 0.7rem;">
+                                                2019. 06.
+                                                02 - 07. 01.</th>
+                                            <td colspan="1" class="colspan-hide"></td>
+                                            <td class="desktop-only">5000 ft</td>
+                                            <td colspan="4" class=" show-more-mobile ">122000</td>
+                                        </tr>
+                                        <tr class="show-more order-7" id="biztositas-row">
+                                            <th scope="row">Csatolmány</th>
+                                            <td colspan="1" class="colspan-hide show-more-mobile"></td>
+                                            <td colspan="1" class="colspan-hide show-more-mobile"></td>
+                                            <td colspan="4" class="colspan-hide show-more-mobile"></td>
                                         </tr>
                                         <tr class="show-more" id="biztositas-row">
                                             <td colspan="7" class="payment" data-title="Fizetési nyugta letöltése">

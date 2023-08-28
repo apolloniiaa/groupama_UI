@@ -13,22 +13,12 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-//Más háttérszín a táblázat fejlécének
-const textiElements = document.querySelectorAll('.texti');
+//Karakterek minimalizálása
 
 document.addEventListener('DOMContentLoaded', function () {
-  const textiElements = document.querySelectorAll('.texti');
+  const identifierSpans = document.querySelectorAll('.identifier');
 
-  textiElements.forEach((element) => {
-    element.classList.add('white-text-black-bg');
-  });
-});
-
-//Azonsító
-document.addEventListener('DOMContentLoaded', function () {
-  const azonositoSpans = document.querySelectorAll('.azonosito');
-
-  azonositoSpans.forEach((span) => {
+  identifierSpans.forEach((span) => {
     const originalText = span.innerText;
     const maxLength = 7;
     const shortText =
@@ -47,3 +37,47 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+//"Dropdown "nyíl mükődése mobilon
+document.addEventListener('DOMContentLoaded', function () {
+  const hideElements = function () {
+    const elementsToHide = document.querySelectorAll('.show-more-mobile');
+    const windowWidth =
+      window.innerWidth || document.documentElement.clientWidth;
+
+    if (windowWidth <= 1024) {
+      elementsToHide.forEach((element) => {
+        element.style.display = 'none';
+      });
+    } else {
+      elementsToHide.forEach((element) => {
+        element.style.display = '';
+      });
+    }
+  };
+
+  hideElements();
+
+  window.addEventListener('resize', hideElements);
+});
+function alignTableColumns() {
+  const firstTableHeadCells = document.querySelectorAll(
+    '.showing-line th:not(.mobile-only)'
+  );
+  const otherTables = document.querySelectorAll(
+    '.common-table-height tbody tr'
+  );
+
+  otherTables.forEach((row) => {
+    const cells = row.querySelectorAll('td:not(.mobile-only)');
+
+    cells.forEach((cell, index) => {
+      const correspondingHeaderCell = firstTableHeadCells[index];
+      if (correspondingHeaderCell) {
+        cell.style.width = getComputedStyle(correspondingHeaderCell).width;
+      }
+    });
+  });
+}
+
+window.addEventListener('load', alignTableColumns);
